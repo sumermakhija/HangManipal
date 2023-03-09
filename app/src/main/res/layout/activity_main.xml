@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_purple">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="294dp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity= "center"
+        android:layout_weight="1"
+        android:background="@color/tarqiz">
+
+        <TextView
+            android:textSize="@dimen/txtWordToBeGuessed"
+            android:id="@+id/txtWordToBeGuessed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="my word"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity= "center"
+        android:layout_weight="1" >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style= "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="required"
+            android:hint="enter one letter"
+            app:counterEnabled="true"
+            app:counterMaxLength="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity= "center"
+        android:layout_weight="1"
+        android:background="@color/tarqiz">
+        <TextView
+            android:textSize="@dimen/txtLettersTried"
+            android:id="@+id/txtLettersTried"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tried letters"
+            android:gravity= "center" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity= "center"
+        android:background="@color/tarqiz"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/BT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="OnClick"
+            android:text="reset"
+            android:textSize="@dimen/BT1" />
+
+    </TableRow>
+</TableLayout>

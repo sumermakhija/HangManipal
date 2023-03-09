@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtTitle">60dp</dimen>
+    <dimen name="txtWordToBeGuessed">35dp</dimen>
+    <dimen name="BT1">50dp</dimen>
+    <dimen name="txtLettersTried">50dp</dimen>
+    <dimen name="txtTriesLeft">50dp</dimen>
+    <dimen name="edUserInput">50</dimen>
+</resources>
